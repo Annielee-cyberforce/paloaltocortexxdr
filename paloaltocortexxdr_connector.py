@@ -691,7 +691,7 @@ class TestConnector(BaseConnector):
         parameters["request_data"] = request_data
         self.save_progress("Request JSON: {0}".format(parameters))
 
-        # make rest call
+        # make rest call #check
         headers = self.authenticationHeaders()
         ret_val, response = self._make_rest_call(
             '/hash_exceptions/block_list/', action_result, headers=headers, json=parameters
