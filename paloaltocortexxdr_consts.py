@@ -4,10 +4,10 @@
 #
 
 # Exception message handling constants
-ERR_CODE_MSG = "Error code unavailable"
-ERR_MSG_UNAVAILABLE = "Error message unavailable. Please check the asset configuration and|or action parameters"
+PA_ERR_CODE_MSG = "Error code unavailable"
+PA_ERR_MSG_UNAVAILABLE = "Error message unavailable. Please check the asset configuration and|or action parameters"
 PARSE_ERR_MSG = "Unable to parse the error message. Please check the asset configuration and|or action parameters"
-ERR_PARSING_RESPONSE = "Error occurred while processing the response"
+PA_ERR_PARSING_RESPONSE = "Error occurred while processing the response"
 VALID_VALUE_MSG = "Please provide a valid value in the {key}"
 
 # Integer validation constants
