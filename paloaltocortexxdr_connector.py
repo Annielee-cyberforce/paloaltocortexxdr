@@ -1248,7 +1248,8 @@ class TestConnector(BaseConnector):
             obj["value"] = sources
             filters.append(obj)
         if status:
-            statuses = ["new", "under_investigation", "resolved_threat_handled", "resolved_known_issue", "resolved_false_positive", "resolved_other", "resolved_auto"]
+            statuses = ["new", "under_investigation", "resolved_threat_handled", "resolved_known_issue",
+                        "resolved_false_positive", "resolved_other", "resolved_auto"]
             if any(value == status for value in statuses):
                 obj = {}
                 obj["field"] = "status"
