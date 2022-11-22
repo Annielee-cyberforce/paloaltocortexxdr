@@ -691,7 +691,7 @@ class TestConnector(BaseConnector):
         parameters["request_data"] = request_data
         self.save_progress("Request JSON: {0}".format(parameters))
 
-        # make rest call
+        # make rest call #check
         headers = self.authenticationHeaders()
         ret_val, response = self._make_rest_call(
             '/hash_exceptions/block_list/', action_result, headers=headers, json=parameters
@@ -1248,7 +1248,8 @@ class TestConnector(BaseConnector):
             obj["value"] = sources
             filters.append(obj)
         if status:
-            statuses = ["new", "under_investigation", "resolved_threat_handled", "resolved_known_issue", "resolved_false_positive", "resolved_other", "resolved_auto"]
+            statuses = ["new", "under_investigation", "resolved_threat_handled", "resolved_known_issue",
+                        "resolved_false_positive", "resolved_other", "resolved_auto"]
             if any(value == status for value in statuses):
                 obj = {}
                 obj["field"] = "status"
